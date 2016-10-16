@@ -1,0 +1,4 @@
+@import "../dist/justify-list.scss";
+.justify-list-demo{
+  @include justify-list(800px,4,20px);
+}

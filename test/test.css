@@ -1,0 +1,17 @@
+/*webkit-sassui-justify-list Start*/
+/*webkit-sassui-justify-list End*/
+.justify-list-demo {
+  width: 800px;
+  overflow: hidden;
+}
+
+.justify-list-demo > .bd {
+  width: 840px;
+  margin-left: -20px;
+}
+
+.justify-list-demo > .bd > .item {
+  width: 185px;
+  margin-left: 20px;
+  float: left;
+}

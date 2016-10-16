@@ -1,0 +1,19 @@
+/*webkit-sassui-justify-list Start*/
+@mixin justify-list($inWidth,$inLength,$inGap,$inItemPrefix:'.item') {
+  $item-widths: $inWidth - ($inLength - 1)*$inGap;
+  $item-width:$item-widths / $inLength;
+  $inner-width:$inWidth+2*$inGap;
+  width:$inWidth;
+  overflow: hidden;
+
+  >.bd{
+    width:$inner-width;
+    margin-left: -$inGap;
+    > #{$inItemPrefix} {
+      width: $item-width;
+      margin-left: $inGap;
+      float: left;
+    }
+  }
+}
+/*webkit-sassui-justify-list End*/
