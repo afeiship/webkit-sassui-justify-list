@@ -1,4 +1,15 @@
-@import "../dist/justify-list.scss";
+@import "../dist/webkit-sassui-justify-list.scss";
+*{margin:0;padding:0;-webkit-margin-before:0;-webkit-margin-after:0;}
+.wrapper{
+  outline:1px solid #f00;
+  width:800px;
+  margin:50px auto;
+}
+.wrapper .item{
+  border:2px solid #ccc;
+  padding:10px;
+  // min-height: 100px;
+}
 .justify-list-demo{
-  @include justify-list(800px,4,20px);
+  @include webkit-sassui-justify-list(500px,320px,120px,100px,3,3);
 }

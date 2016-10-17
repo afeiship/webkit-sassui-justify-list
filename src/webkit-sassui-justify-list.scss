@@ -1,0 +1,30 @@
+/*webkit-sassui-justify-list Start*/
+@mixin webkit-sassui-justify-list($inWidth,$inHeight,$inItemWidth,$inItemHeight,$inCount,$inLineCount,$inItemPrefix:'.item') {
+  $gap-width:($inWidth - $inItemWidth*$inCount)/($inCount - 1);
+  $gap-height:($inHeight - $inItemHeight*$inLineCount)/($inLineCount - 1);
+
+  $bd-width:$inWidth+$gap-width*2;
+  $bd-height:$inHeight+$gap-height*2;
+
+  width:$inWidth;
+  height:$inHeight;
+  overflow: hidden;
+
+  >.bd{
+    width:$bd-width;
+    height:$bd-height;
+    margin-left: -$gap-width;
+    margin-top: -$gap-height;
+    box-sizing: border-box;
+    > #{$inItemPrefix} {
+      box-sizing: border-box;
+      width: $inItemWidth;
+      height:$inItemHeight;
+      margin-left: $gap-width;
+      margin-top: $gap-height;
+      float: left;
+    }
+  }
+
+}
+/*webkit-sassui-justify-list End*/

@@ -1,17 +1,42 @@
 /*webkit-sassui-justify-list Start*/
 /*webkit-sassui-justify-list End*/
-.justify-list-demo {
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+}
+
+.wrapper {
+  outline: 1px solid #f00;
   width: 800px;
+  margin: 50px auto;
+}
+
+.wrapper .item {
+  border: 2px solid #ccc;
+  padding: 10px;
+}
+
+.justify-list-demo {
+  width: 500px;
+  height: 320px;
   overflow: hidden;
 }
 
 .justify-list-demo > .bd {
-  width: 840px;
-  margin-left: -20px;
+  width: 640px;
+  height: 340px;
+  margin-left: -70px;
+  margin-top: -10px;
+  box-sizing: border-box;
 }
 
 .justify-list-demo > .bd > .item {
-  width: 185px;
-  margin-left: 20px;
+  box-sizing: border-box;
+  width: 120px;
+  height: 100px;
+  margin-left: 70px;
+  margin-top: 10px;
   float: left;
 }
