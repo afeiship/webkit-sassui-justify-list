@@ -2,8 +2,7 @@
   "name": "webkit-sassui-justify-list",
   "description": "webkit sass ui module for negative margin list.",
   "main": [
-    "dist/justify-list.css",
-    "dist/justify-list.scss"
+    "dist/webkit-sassui-justify-list.scss"
   ],
   "authors": [
     "afei"
