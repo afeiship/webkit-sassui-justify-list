@@ -1,29 +1,37 @@
 /*webkit-sassui-justify-list Start*/
+@function strip-units($inNumber) {
+   @return $inNumber / ($inNumber * 0 + 1);
+}
+
 @mixin webkit-sassui-justify-list($inWidth,$inHeight,$inItemWidth,$inItemHeight,$inCount,$inLineCount:NONE,$inItemPrefix:'.item') {
-  $gap-width:($inWidth - $inItemWidth*$inCount)/($inCount - 1);
+  $unit: unit($inWidth);
+  $width:strip-units($inWidth);
+  $height:strip-units($inHeight);
+  $item-width:strip-units($inItemWidth);
+  $item-height:strip-units($inItemHeight);
 
-
-  width:$inWidth;
-  height:$inHeight;
+  $gap-width: ($width - $item-width*$inCount)/($inCount - 1);
+  width: $inWidth;
+  height: $inHeight;
   overflow: hidden;
 
   > #{$inItemPrefix} {
     box-sizing: border-box;
     width: $inItemWidth;
-    height:$inItemHeight;
-    margin-right: $gap-width;
-    &:nth-child(#{$inCount}n){
+    height: $inItemHeight;
+    margin-right: $gap-width#{$unit};
+
+    &:nth-child(#{$inCount}n) {
       margin-right: 0;
     }
     float: left;
   }
-
   @if $inLineCount!=NONE {
-    $gap-height:($inHeight - $inItemHeight*$inLineCount)/($inLineCount - 1);
+    $gap-height: ($height - $item-height*$inLineCount)/($inLineCount - 1);
+
     > #{$inItemPrefix} {
-      margin-bottom: $gap-height;
+      margin-bottom: $gap-height#{$unit};
     }
   }
-
 }
 /*webkit-sassui-justify-list End*/

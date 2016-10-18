@@ -17,13 +17,22 @@ h2{
 
 .justify-list-demo{
   //You know the line count:
-  @include webkit-sassui-justify-list(500px,220px,120px,100px,4,2);
+  @include webkit-sassui-justify-list(500px,220px,120px,80px,4,2);
 }
 
 .justify-list-demo2{
   //You don't care the line count:
-  @include webkit-sassui-justify-list(500px,320px,120px,100px,3);
+  @include webkit-sassui-justify-list(500px,220px,120px,50px,3);
   >.item{
     margin-bottom: 10px;
+  }
+}
+
+
+.justify-list-demo3{
+  //You don't care the line count:
+  @include webkit-sassui-justify-list(30rem,16rem,8rem,4rem,3,3);
+  >.item{
+    // margin-bottom: 10px;
   }
 }
