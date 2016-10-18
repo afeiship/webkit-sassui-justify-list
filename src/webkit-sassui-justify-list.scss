@@ -1,8 +1,5 @@
 /*webkit-sassui-justify-list Start*/
-@function strip-units($inNumber) {
-   @return $inNumber / ($inNumber * 0 + 1);
-}
-
+@import "../bower_components/webkit-sass-functions/dist/webkit-sass-functions";
 @mixin webkit-sassui-justify-list($inWidth,$inHeight,$inItemWidth,$inItemHeight,$inCount,$inLineCount:NONE,$inItemPrefix:'.item') {
   $unit: unit($inWidth);
   $width:strip-units($inWidth);
