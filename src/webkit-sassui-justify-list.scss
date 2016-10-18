@@ -1,6 +1,6 @@
 /*webkit-sassui-justify-list Start*/
 @import "../bower_components/webkit-sass-functions/dist/webkit-sass-functions";
-@mixin webkit-sassui-justify-list($inWidth,$inHeight,$inItemWidth,$inItemHeight,$inCount,$inLineCount:NONE,$inItemPrefix:'.item') {
+@mixin webkit-sassui-justify-list($inWidth,$inHeight,$inItemWidth,$inItemHeight,$inCount,$inLineCount:NONE,$inSelector:'>.item') {
   $unit: unit($inWidth);
   $width:strip-units($inWidth);
   $height:strip-units($inHeight);
@@ -12,7 +12,7 @@
   height: $inHeight;
   overflow: hidden;
 
-  > #{$inItemPrefix} {
+  #{$inSelector} {
     box-sizing: border-box;
     width: $inItemWidth;
     height: $inItemHeight;
@@ -26,7 +26,7 @@
   @if $inLineCount!=NONE {
     $gap-height: ($height - $item-height*$inLineCount)/($inLineCount - 1);
 
-    > #{$inItemPrefix} {
+    #{$inSelector} {
       margin-bottom: $gap-height#{$unit};
     }
   }
