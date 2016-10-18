@@ -21,7 +21,7 @@
     &:nth-child(#{$inCount}n) {
       margin-right: 0;
     }
-    display: inline-block;
+    float: left;
   }
   @if $inLineCount!=NONE {
     $gap-height: ($height - $item-height*$inLineCount)/($inLineCount - 1);
