@@ -46,7 +46,7 @@ h2{
 
 .justify-list-demo4{
   //You don't care the line count:
-  @include webkit-sassui-justify-list(36rem,16rem,4rem,2rem,5,3,'.dc-item');
+  @include webkit-sassui-justify-list(36rem,16rem,5rem,2rem,5,3,'.dc-item');
   .dc-item{
     // margin-bottom: 10px;
   }
