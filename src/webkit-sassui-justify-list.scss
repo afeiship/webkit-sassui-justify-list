@@ -1,5 +1,5 @@
 /*webkit-sassui-justify-list Start*/
-@mixin webkit-sassui-justify-list($inWidth,$inHeight,$inItemWidth,$inItemHeight,$inCount,$inLineCount:'NONE',$inItemPrefix:'.item') {
+@mixin webkit-sassui-justify-list($inWidth,$inHeight,$inItemWidth,$inItemHeight,$inCount,$inLineCount:NONE,$inItemPrefix:'.item') {
   $gap-width:($inWidth - $inItemWidth*$inCount)/($inCount - 1);
 
 
@@ -18,7 +18,7 @@
     float: left;
   }
 
-  @if $inLineCount!='NONE' {
+  @if $inLineCount!=NONE {
     $gap-height:($inHeight - $inItemHeight*$inLineCount)/($inLineCount - 1);
     > #{$inItemPrefix} {
       margin-bottom: $gap-height;
