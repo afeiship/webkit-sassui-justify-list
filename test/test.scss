@@ -1,15 +1,29 @@
 @import "../dist/webkit-sassui-justify-list.scss";
 *{margin:0;padding:0;-webkit-margin-before:0;-webkit-margin-after:0;}
+h2{
+  margin: 20px 0 10px;
+  text-align: center;
+}
 .wrapper{
   outline:1px solid #f00;
   width:800px;
-  margin:50px auto;
+  margin:0 auto;
 }
 .wrapper .item{
   border:2px solid #ccc;
   padding:10px;
   // min-height: 100px;
 }
+
 .justify-list-demo{
-  @include webkit-sassui-justify-list(500px,320px,120px,100px,3,3);
+  //You know the line count:
+  @include webkit-sassui-justify-list(500px,220px,120px,100px,4,2);
+}
+
+.justify-list-demo2{
+  //You don't care the line count:
+  @include webkit-sassui-justify-list(500px,320px,120px,100px,3);
+  >.item{
+    margin-bottom: 10px;
+  }
 }

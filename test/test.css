@@ -7,10 +7,15 @@
   -webkit-margin-after: 0;
 }
 
+h2 {
+  margin: 20px 0 10px;
+  text-align: center;
+}
+
 .wrapper {
   outline: 1px solid #f00;
   width: 800px;
-  margin: 50px auto;
+  margin: 0 auto;
 }
 
 .wrapper .item {
@@ -20,23 +25,44 @@
 
 .justify-list-demo {
   width: 500px;
+  height: 220px;
+  overflow: hidden;
+}
+
+.justify-list-demo > .item {
+  box-sizing: border-box;
+  width: 120px;
+  height: 100px;
+  margin-right: 6.66667px;
+  float: left;
+}
+
+.justify-list-demo > .item:nth-child(4n) {
+  margin-right: 0;
+}
+
+.justify-list-demo > .item {
+  margin-bottom: 20px;
+}
+
+.justify-list-demo2 {
+  width: 500px;
   height: 320px;
   overflow: hidden;
 }
 
-.justify-list-demo > .bd {
-  width: 640px;
-  height: 340px;
-  margin-left: -70px;
-  margin-top: -10px;
-  box-sizing: border-box;
-}
-
-.justify-list-demo > .bd > .item {
+.justify-list-demo2 > .item {
   box-sizing: border-box;
   width: 120px;
   height: 100px;
-  margin-left: 70px;
-  margin-top: 10px;
+  margin-right: 70px;
   float: left;
+}
+
+.justify-list-demo2 > .item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.justify-list-demo2 > .item {
+  margin-bottom: 10px;
 }
