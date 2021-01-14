@@ -17,6 +17,25 @@ npm i @jswork/wsui-justify-list
 @import '~@jswork/wsui-justify-list/dist/index.scss';
 // use css
 @import '~@jswork/wsui-justify-list/dist/style.css';
+
+
+// in-width: 盒子的宽度
+// in-height: 盒子的高度
+// in-item-width: 每个子级元素的宽度
+// in-item-height: 每个子级元素的高度
+// in-column-count: 每行有多少列
+// in-row-count: 共有多少行
+// in-selector: 默认选择器
+
+@include wsui-justify-list(
+  $in-width,
+  $in-height,
+  $in-item-width,
+  $in-item-height,
+  $in-column-count,
+  $in-row-count: -1,
+  $in-selector: ">.is-item"
+);
 ```
 
 ## license
