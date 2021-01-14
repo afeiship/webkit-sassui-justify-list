@@ -33,5 +33,10 @@
   },
   "dependencies": {
     "@jswork/wsui-functions": "^1.0.4"
-  }
+  },
+  "keywords": [
+    "webkit",
+    "justify",
+    "list"
+  ]
 }
