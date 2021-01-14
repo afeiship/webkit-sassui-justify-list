@@ -1,0 +1,62 @@
+/*!
+ * name: @jswork/wsui-justify-list
+ * description: wsui module for negative margin list.
+ * homepage: https://github.com/afeiship/wsui-justify-list
+ * version: 1.0.0
+ * date: 2021-01-14 23:02:42
+ * license: MIT
+ */
+
+/*wsui-justify-list Start*/
+@import "node_modules/@jswork/wsui-functions/dist/index.scss";
+
+// in-width: 盒子的宽度
+// in-height: 盒子的高度
+// in-item-width: 每个子级元素的宽度
+// in-item-height: 每个子级元素的高度
+// in-column-count: 每行有多少列
+// in-row-count: 共有多少行
+// in-selector: 默认选择器
+
+
+@mixin wsui-justify-list(
+  $in-width,
+  $in-height,
+  $in-item-width,
+  $in-item-height,
+  $in-column-count,
+  $in-row-count: -1,
+  $in-selector: ">.is-item"
+) {
+  $unit: unit($in-width);
+  $width: strip-unit($in-width);
+  $height: strip-unit($in-height);
+  $item-width: strip-unit($in-item-width);
+  $item-height: strip-unit($in-item-height);
+
+  $gap-width: ($width - $item-width * $in-column-count)/ ($in-column-count - 1);
+
+  width: $in-width;
+  overflow: hidden;
+
+  #{$in-selector} {
+    float: left;
+    box-sizing: border-box;
+    width: $in-item-width;
+    height: $in-item-height;
+    margin-right: $gap-width#{$unit};
+    &:nth-child(#{$in-column-count}n) {
+      margin-right: 0;
+    }
+  }
+
+  @if $in-row-count!=-1 {
+    $gap-height: ($height - $item-height * $in-row-count)/ ($in-row-count - 1);
+
+    height: $in-height;
+    #{$in-selector} {
+      margin-bottom: $gap-height#{$unit};
+    }
+  }
+}
+/*wsui-justify-list End*/

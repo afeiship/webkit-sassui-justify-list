@@ -1,49 +1,36 @@
-# webkit-sassui-justify-list
-> webkit sass ui module for negative margin list.
+# wsui-justify-list
+> wsui module for negative margin list.
 
-## usage:
-+ config sass:
-```sass
-.justify-list-demo{
-  //You know the line count:
-  @include webkit-sassui-justify-list(500px,220px,120px,100px,4,2);
-}
+[![version][version-image]][version-url]
+[![license][license-image]][license-url]
+[![size][size-image]][size-url]
+[![download][download-image]][download-url]
 
-.justify-list-demo2{
-  //You don't care the line count:
-  @include webkit-sassui-justify-list(500px,320px,120px,100px,3);
-  >.item{
-    margin-bottom: 10px;
-  }
-}
+## installation
+```shell
+npm i @jswork/wsui-justify-list
 ```
 
-+ html:
-```html
-<h2>You know the line count:</h2>
-<div class="justify-list-demo wrapper">
-    <div class="item">item1</div>
-    <div class="item">item2</div>
-    <div class="item">item3</div>
-    <div class="item">item4</div>
-    <div class="item">item5</div>
-    <div class="item">item6</div>
-    <div class="item">item7</div>
-    <div class="item">item8</div>
-</div>
-
-<h2>You don't care the line count:</h2>
-<div class="justify-list-demo2 wrapper">
-    <div class="item">item1</div>
-    <div class="item">item2</div>
-    <div class="item">item3</div>
-    <div class="item">item4</div>
-    <div class="item">item5</div>
-    <div class="item">item6</div>
-    <div class="item">item7</div>
-    <div class="item">item8</div>
-</div>
+## usage
+```scss
+// use sass
+@import '~@jswork/wsui-justify-list/dist/index.scss';
+// use css
+@import '~@jswork/wsui-justify-list/dist/style.css';
 ```
 
-## resources:
-+ https://github.com/afeiship/generator-webkit-sassui
+## license
+Code released under [the MIT license](https://github.com/afeiship/wsui-justify-list/blob/master/LICENSE.txt).
+
+[version-image]: https://img.shields.io/npm/v/@jswork/wsui-justify-list
+[version-url]: https://npmjs.org/package/@jswork/wsui-justify-list
+
+[license-image]: https://img.shields.io/npm/l/@jswork/wsui-justify-list
+[license-url]: https://github.com/afeiship/wsui-justify-list/blob/master/LICENSE.txt
+
+[size-image]: https://img.shields.io/bundlephobia/minzip/@jswork/wsui-justify-list
+[size-url]: https://github.com/afeiship/wsui-justify-list/blob/master/dist/wsui-justify-list.min.js
+
+[download-image]: https://img.shields.io/npm/dm/@jswork/wsui-justify-list
+[download-url]: https://www.npmjs.com/package/@jswork/wsui-justify-list
+

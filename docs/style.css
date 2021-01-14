@@ -1,28 +1,35 @@
-/*webkit-sassui-justify-list Start*/
-/*black Start*/
-/*black End*/
-/*calc-percent Start*/
-/*calc-percent End*/
-/*debug Start*/
-/*debug End*/
-/*first Start*/
-/*first End*/
+/*!
+ * name: @jswork/wsui-justify-list
+ * description: wsui module for negative margin list.
+ * homepage: https://github.com/afeiship/wsui-justify-list
+ * version: 1.0.0
+ * date: 2021-01-14 23:02:42
+ * license: MIT
+ */
+/*wsui-justify-list Start*/
+/*!
+ * name: @jswork/wsui-functions
+ * description: Webkit sass functions.
+ * homepage: https://github.com/afeiship/wsui-functions
+ * version: 1.0.4
+ * date: 2020-12-23 10:05:24
+ * license: MIT
+ */
 /*last Start*/
 /*last End*/
-/*purge Start*/
-/*purge End*/
+/*dynamic-text-color Start*/
+/*dynamic-text-color End*/
+/*range Start*/
+/*range End*/
+/*rempx Start*/
+/*rem End*/
 /*remove-duplicates Start*/
 /*remove-duplicates End*/
 /*strip-units Start*/
 /*strip-units End*/
-/*webkit-sassui-justify-list End*/
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-margin-before: 0;
-  -webkit-margin-after: 0;
-}
-
+/*map-deep-get Start*/
+/*map-deep-get End*/
+/*wsui-justify-list End*/
 h2 {
   margin: 20px 0 10px;
   text-align: center;
@@ -34,7 +41,7 @@ h2 {
   margin: 0 auto;
 }
 
-.wrapper .item,
+.wrapper .is-item,
 .wrapper .dc-item {
   border: 2px solid #ccc;
   padding: 10px;
@@ -50,19 +57,19 @@ h2 {
   height: 220px;
 }
 
-.justify-list-demo > .item {
+.justify-list-demo > .is-item {
+  float: left;
   box-sizing: border-box;
   width: 120px;
   height: 80px;
   margin-right: 6.66667px;
-  float: left;
 }
 
-.justify-list-demo > .item:nth-child(4n) {
+.justify-list-demo > .is-item:nth-child(4n) {
   margin-right: 0;
 }
 
-.justify-list-demo > .item {
+.justify-list-demo > .is-item {
   margin-bottom: 60px;
 }
 
@@ -71,19 +78,19 @@ h2 {
   overflow: hidden;
 }
 
-.justify-list-demo2 > .item {
+.justify-list-demo2 > .is-item {
+  float: left;
   box-sizing: border-box;
   width: 120px;
   height: 50px;
   margin-right: 70px;
-  float: left;
 }
 
-.justify-list-demo2 > .item:nth-child(3n) {
+.justify-list-demo2 > .is-item:nth-child(3n) {
   margin-right: 0;
 }
 
-.justify-list-demo2 > .item {
+.justify-list-demo2 > .is-item {
   margin-bottom: 10px;
 }
 
@@ -93,19 +100,19 @@ h2 {
   height: 16rem;
 }
 
-.justify-list-demo3 > .item {
+.justify-list-demo3 > .is-item {
+  float: left;
   box-sizing: border-box;
   width: 8rem;
   height: 4rem;
   margin-right: 3rem;
-  float: left;
 }
 
-.justify-list-demo3 > .item:nth-child(3n) {
+.justify-list-demo3 > .is-item:nth-child(3n) {
   margin-right: 0;
 }
 
-.justify-list-demo3 > .item {
+.justify-list-demo3 > .is-item {
   margin-bottom: 2rem;
 }
 
@@ -116,11 +123,11 @@ h2 {
 }
 
 .justify-list-demo4 .dc-item {
+  float: left;
   box-sizing: border-box;
   width: 6rem;
   height: 3rem;
   margin-right: 1.5rem;
-  float: left;
 }
 
 .justify-list-demo4 .dc-item:nth-child(5n) {
