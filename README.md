@@ -24,7 +24,7 @@ npm i @jswork/wsui-justify-list
 // in-item-width: 每个子级元素的宽度
 // in-item-height: 每个子级元素的高度
 // in-column-count: 每行有多少列
-// in-row-count: 共有多少行
+// in-row-count: 共有多少行, -1: 或者不传，表示不关心行数
 // in-selector: 默认选择器
 
 @include wsui-justify-list(
