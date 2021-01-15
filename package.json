@@ -1,6 +1,6 @@
 {
   "name": "@jswork/wsui-justify-list",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "wsui module for negative margin list.",
   "homepage": "https://github.com/afeiship/wsui-justify-list",
   "author": {
@@ -35,8 +35,10 @@
     "@jswork/wsui-functions": "^1.0.4"
   },
   "keywords": [
-    "webkit",
     "justify",
-    "list"
+    "list",
+    "wsui",
+    "last-row",
+    "grid"
   ]
 }
