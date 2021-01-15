@@ -3,7 +3,7 @@
  * description: wsui module for negative margin list.
  * homepage: https://github.com/afeiship/wsui-justify-list
  * version: 1.0.2
- * date: 2021-01-15 15:11:38
+ * date: 2021-01-15 15:39:01
  * license: MIT
  */
 
@@ -33,7 +33,7 @@
     float: left;
     box-sizing: border-box;
     width: $in-item-width;
-    margin-right: $gap-width#{$unit};
+    margin-right: #{$gap-width+$unit};
 
     // last-column-item
     &:nth-child(#{$in-columns}n) {
