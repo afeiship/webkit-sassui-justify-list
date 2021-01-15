@@ -33,7 +33,7 @@ npm i @jswork/wsui-justify-list
 ```
 
 ```html
-<div class="list1 ">
+<div class="list1">
   <div class="is-item">item1</div>
   <div class="is-item">item2</div>
   <div class="is-item">item3</div>

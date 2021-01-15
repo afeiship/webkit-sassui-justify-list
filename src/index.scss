@@ -15,10 +15,10 @@
   $gap-width: ($width - $item-width * $in-columns)/ ($in-columns - 1);
 
   width: $in-width;
-  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
 
   #{$in-selector} {
-    float: left;
     box-sizing: border-box;
     width: $in-item-width;
     margin-right: $gap-width#{$unit};
