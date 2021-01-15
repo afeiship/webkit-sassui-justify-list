@@ -5,6 +5,7 @@
 // in-item-width: 每个子级元素的宽度
 // in-columns: 每行有多少列
 // in-selector: 默认选择器
+// in-slibling: 末行兄弟选择器
 
 @mixin wsui-justify-list($in-width, $in-item-width, $in-columns, $in-selector: ">.is-item", $in-slibling: ".is-item") {
   $unit: unit($in-width);
