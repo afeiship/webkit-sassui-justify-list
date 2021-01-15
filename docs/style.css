@@ -1,13 +1,4 @@
 /*!
- * name: @jswork/wsui-justify-list
- * description: wsui module for negative margin list.
- * homepage: https://github.com/afeiship/wsui-justify-list
- * version: 1.0.1
- * date: 2021-01-15 13:36:54
- * license: MIT
- */
-/*wsui-justify-list Start*/
-/*!
  * name: @jswork/wsui-functions
  * description: Webkit sass functions.
  * homepage: https://github.com/afeiship/wsui-functions
@@ -29,6 +20,15 @@
 /*strip-units End*/
 /*map-deep-get Start*/
 /*map-deep-get End*/
+/*!
+ * name: @jswork/wsui-justify-list
+ * description: wsui module for negative margin list.
+ * homepage: https://github.com/afeiship/wsui-justify-list
+ * version: 1.0.1
+ * date: 2021-01-15 14:41:39
+ * license: MIT
+ */
+/*wsui-justify-list Start*/
 /*wsui-justify-list End*/
 h2 {
   margin: 20px 0 10px;

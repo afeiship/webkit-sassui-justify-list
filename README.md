@@ -13,7 +13,10 @@ npm i @jswork/wsui-justify-list
 
 ## usage
 ```scss
-// use sass
+// deps - `strip-unit`
+@import "~@jswork/wsui-functions/dist/index.scss";
+
+// use scss
 @import '~@jswork/wsui-justify-list/dist/index.scss';
 // use css
 @import '~@jswork/wsui-justify-list/dist/style.css';
