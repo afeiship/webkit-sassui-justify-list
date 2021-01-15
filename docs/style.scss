@@ -4,47 +4,30 @@ h2 {
   margin: 20px 0 10px;
   text-align: center;
 }
-.wrapper {
-  outline: 1px solid #f00;
-  width: 800px;
+.container {
+  width:1200px;
   margin: 0 auto;
-}
-.wrapper .is-item,
-.wrapper .dc-item {
-  border: 2px solid #ccc;
-  padding: 10px;
-  // min-height: 100px;
-}
-
-.blank-100 {
-  height: 100px;
-}
-
-.justify-list-demo {
-  //You know the line count:
-  @include wsui-justify-list(500px, 220px, 120px, 80px, 4, 2);
-}
-
-.justify-list-demo2 {
-  //You don't care the line count:
-  @include wsui-justify-list(500px, 220px, 120px, 50px, 3);
-  > .is-item {
-    margin-bottom: 10px;
+  .is-item {
+    min-height: 100px;
+    margin-bottom: 14px;
+    background: #eee;
+  }
+  [class^="list"] {
+    border: 1px solid #000;
+    margin: 0 auto 20px;
   }
 }
 
-.justify-list-demo3 {
-  //You don't care the line count:
-  @include wsui-justify-list(30rem, 16rem, 8rem, 4rem, 3, 3);
-  > .is-item {
-    // margin-bottom: 10px;
+.list1 {
+  margin-bottom: 20px;
+  @include wsui-justify-list(1000px, 220px, 4) {
+    background: #ddd;
   }
 }
 
-.justify-list-demo4 {
-  //You don't care the line count:
-  @include wsui-justify-list(36rem, 16rem, 6rem, 3rem, 5, 3, ".dc-item");
-  .dc-item {
-    // margin-bottom: 10px;
+.list2 {
+  margin-bottom: 20px;
+  @include wsui-justify-list(100%, 24%, 4) {
+    background: #f60;
   }
 }

@@ -27,15 +27,24 @@ npm i @jswork/wsui-justify-list
 // in-row-count: 共有多少行, -1: 或者不传，表示不关心行数
 // in-selector: 默认选择器
 
-@include wsui-justify-list(
-  $in-width,
-  $in-height,
-  $in-item-width,
-  $in-item-height,
-  $in-column-count,
-  $in-row-count: -1,
-  $in-selector: ">.is-item"
-);
+.list1 {
+  margin-bottom: 20px;
+  @include wsui-justify-list(1000px, 220px, 4) {
+    background: #ddd;
+  }
+}
+```
+
+```html
+<div class="list1 ">
+  <div class="is-item">item1</div>
+  <div class="is-item">item2</div>
+  <div class="is-item">item3</div>
+  <div class="is-item">item4</div>
+  <div class="is-item">item5</div>
+  <div class="is-item">item6</div>
+  <div class="is-item">item7</div>
+</div>
 ```
 
 ## license
