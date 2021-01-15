@@ -11,7 +11,6 @@
   $unit: unit($in-width);
   $width: strip-unit($in-width);
   $item-width: strip-unit($in-item-width);
-
   $gap-width: ($width - $item-width * $in-columns)/ ($in-columns - 1);
 
   width: $in-width;
