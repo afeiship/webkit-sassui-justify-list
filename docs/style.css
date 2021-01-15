@@ -3,7 +3,7 @@
  * description: wsui module for negative margin list.
  * homepage: https://github.com/afeiship/wsui-justify-list
  * version: 1.0.0
- * date: 2021-01-15 13:33:07
+ * date: 2021-01-15 13:35:39
  * license: MIT
  */
 /*wsui-justify-list Start*/
@@ -54,11 +54,17 @@ h2 {
 .list1 {
   margin-bottom: 20px;
   width: 1000px;
-  display: flex;
-  flex-wrap: wrap;
+}
+
+.list1:after {
+  clear: both;
+  content: "\200B";
+  display: block;
+  height: 0;
 }
 
 .list1 > .is-item {
+  float: left;
   box-sizing: border-box;
   width: 220px;
   margin-right: 40px;
@@ -77,11 +83,17 @@ h2 {
 .list2 {
   margin-bottom: 20px;
   width: 100%;
-  display: flex;
-  flex-wrap: wrap;
+}
+
+.list2:after {
+  clear: both;
+  content: "\200B";
+  display: block;
+  height: 0;
 }
 
 .list2 > .is-item {
+  float: left;
   box-sizing: border-box;
   width: 24%;
   margin-right: 1.33333%;
